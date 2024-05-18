@@ -46,8 +46,7 @@ const socketAuthenticator = async (err, socket, next) => {
 
     const user = await User.findById(decodedData._id);
 
-    if (!user)
-      return next(new ErrorHandler("Please login to access this route", 401));
+    if (!user) return next(new ErrorHandler("User not found", 401));
 
     socket.user = user;
 
