@@ -1,7 +1,7 @@
 const corsOptions = {
   origin: [
     "http://localhost:5173",
-    "https://chat-nexus-2hmfglmvt-pulkit-1110s-projects.vercel.app",
+    "https://chat-nexus-wine.vercel.app",
     process.env.CLIENT_URL,
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
