@@ -7,22 +7,16 @@ This repository contains the backend code for a web chat application named Chat 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/pulkit-1110/chat-nexus-backend
+   git clone pulkit-1110/chat-nexus-backend
    ```
 
-2. Navigate to the backend directory:
-
-   ```bash
-   cd backend
-   ```
-
-3. Install dependencies:
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-4. Create a `.env` file based on the provided `.env.sample` and fill in the necessary environment variables:
+3. Create a `.env` file based on the provided `.env.sample` and fill in the necessary environment variables:
 
    ```dotenv
    PORT=8000
@@ -36,7 +30,7 @@ This repository contains the backend code for a web chat application named Chat 
    CLOUDINARY_API_SECRET=your_cloud_secret
    ```
 
-5. Start the server:
+4. Start the server:
    ```bash
    npm run start
    ```
