@@ -40,7 +40,7 @@ const socketAuthenticator = async (err, socket, next) => {
     const authToken = socket.request.cookies[CHATTU_TOKEN];
 
     if (!authToken)
-      return next(new ErrorHandler("Please login to access this route", 401));
+      return next(new ErrorHandler("No Authentication Token Found", 401));
 
     const decodedData = jwt.verify(authToken, process.env.JWT_SECRET);
 
@@ -54,7 +54,7 @@ const socketAuthenticator = async (err, socket, next) => {
     return next();
   } catch (error) {
     console.log(error);
-    return next(new ErrorHandler("Please login to access this route", 401));
+    return next(new ErrorHandler(error.message, 401));
   }
 };
 
