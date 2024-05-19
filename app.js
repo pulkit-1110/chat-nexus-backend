@@ -48,7 +48,10 @@ cloudinary.config({
 const app = express();
 const server = createServer(app);
 const io = new Server(server, {
+  wssEngine: ["ws", "wss"],
+  transports: ["websocket", "polling"],
   cors: corsOptions,
+  allowEIO3: true,
 });
 
 app.set("io", io);
