@@ -9,6 +9,7 @@ const cookieOptions = {
   sameSite: "none",
   httpOnly: true,
   secure: true,
+  domain: ".vercel.app",
 };
 
 const connectDB = (uri) => {
