@@ -55,6 +55,7 @@ const io = new Server(server, {
 });
 
 app.set("io", io);
+app.set("trust proxy", 5)
 
 // Using Middlewares Here
 app.use(express.json());
