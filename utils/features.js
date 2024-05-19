@@ -9,6 +9,7 @@ const cookieOptions = {
   sameSite: "none",
   httpOnly: true,
   secure: true,
+  domain: "ondigitalocean.app",
 };
 
 const connectDB = (uri) => {
