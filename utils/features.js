@@ -9,7 +9,7 @@ const cookieOptions = {
   sameSite: "none",
   httpOnly: true,
   secure: true,
-  domain: "ondigitalocean.app",
+  domain: ".vercel.app",
 };
 
 const connectDB = (uri) => {
