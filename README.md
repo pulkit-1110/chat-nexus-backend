@@ -50,10 +50,6 @@ This repository contains the backend code for a web chat application named Chat 
 - Express.js
 - Node.js
 
-## Contributors
-
-- [Pulkit Uppal](https://github.com/pulkit-1110)
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
